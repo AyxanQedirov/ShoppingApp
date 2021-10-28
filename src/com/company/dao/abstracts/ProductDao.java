@@ -8,11 +8,14 @@ public interface ProductDao {
 
     List<Product> getAll();
 
-    List<Product> getById(int id);
+    Product getById(int id);
 
-    List<Product> getByCategory(String categoryName);
+    List<Product> getByCategoryId(int categoryId);
 
     void delete(int id);
+
+    void decreaseUnitInStockCount(int id,int decreasingCount);
+
 
 
 }

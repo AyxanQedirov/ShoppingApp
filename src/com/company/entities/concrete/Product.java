@@ -8,10 +8,10 @@ import com.company.entities.abstracts.Entity;
     String name ;
     double price;
     int unitInStock;
-    String category;
+    int category;
 
 
-    public Product(int id, String name, double price, int unitInStock, String category){
+    public Product(int id, String name, double price, int unitInStock, int category){
         this.id=id;
         this.category=category;
         this.name=name;
@@ -36,8 +36,12 @@ import com.company.entities.abstracts.Entity;
         return unitInStock;
     }
 
-    public String getCategory() {
+    public int getCategory() {
         return category;
+    }
+
+    public void setUnitInStock(int unitInStockCount){
+        this.unitInStock=unitInStockCount;
     }
 
 
